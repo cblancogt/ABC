@@ -1,0 +1,56 @@
+﻿@model IEnumerable<ABC.Models.Usuario>
+@{
+    ViewData["Title"] = "Usuarios";
+    Layout = "~/Views/Shared/_Principal.cshtml";
+}
+
+<h1>Usuarios papa</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <h3>Usuarios papa</h3>
+        </div>
+        <div class="col-sm-6">
+            <a class="btn btn-success d-block">agregar libro</a>
+        </div>
+    </div>
+
+    <div class="row">
+        @if (Model.Count()>0) {
+               <table class="table table-bordered table-striped">
+                   <thead>
+                       <tr>
+                           <td>@Html.DisplayNameFor(m => m.IdUsuario)</td>
+                      
+                           <td>@Html.DisplayNameFor(m => m.Nombre)</td>
+                       
+                           <td>@Html.DisplayNameFor(m => m.Correo)</td>
+                       
+                           <td>@Html.DisplayNameFor(m => m.Telefono)</td>
+                       </tr>
+                   </thead>
+                   <tbody>
+                       @foreach (var item in Model)
+                       {
+                           <tr>
+                               <td>@item.IdUsuario</td>
+                          
+                               <td>@item.Nombre</td>
+                         
+                               <td>@item.Correo</td>
+                          
+                               <td>@item.Telefono</td>
+                           </tr>
+                       }
+                   </tbody>
+               </table> 
+            }
+            else
+            {
+
+            }
+    </div>
+    
+</div>
+

@@ -1,0 +1,39 @@
+.empresa{text-align:center;}
+
+.menu{background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+    color:aliceblue;
+    height: 100%;}
+
+.menu-item-label{
+color:aliceblue;
+}
+
+.menuscabecera{
+    color:black;
+}
+
+body, html { 
+    margin:0; 
+    padding:0; 
+    height:100%; 
+  } 
+  #wrapper { 
+    min-height:100%; 
+    position:relative; 
+  } 
+  #header-zone { 
+    padding:10px; 
+    height: 50px; 
+    background:red; 
+  } 
+  #middle-zone { 
+    padding-bottom:100px; 
+  } 
+  #footer-zone { 
+    height: 50px; 
+    background:rgb(255, 255, 255); 
+    width:100%; 
+    position:absolute; 
+    bottom:0; 
+    left:0; 
+  }
